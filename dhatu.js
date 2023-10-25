@@ -3,18 +3,53 @@ const spinBtn = document.getElementById("spin-btn");
 const finalValue = document.getElementById("final-value");
 //Object that stores values of minimum and maximum angle for a value
 const rotationValues = [
-  { minDegree: 0, maxDegree: 10, value: 2 },
-  { minDegree: 11, maxDegree: 100, value: 1 },
-  { minDegree: 101, maxDegree: 190, value: 4 },
-  { minDegree: 191, maxDegree: 280, value: 3 },
-  { minDegree: 281, maxDegree: 360, value: 2 },
+  { minDegree: 0, maxDegree: 9, value: "दा" },
+  { minDegree: 10, maxDegree: 27, value: "ह्री" },
+  { minDegree: 28, maxDegree: 45, value: "भी" },
+  { minDegree: 46, maxDegree: 63, value: "स्मृ" },
+  { minDegree: 64, maxDegree: 81, value: "हन्" },
+  { minDegree: 82, maxDegree: 99, value: "भू" },
+  { minDegree: 100, maxDegree: 117, value: "कृ"},
+  { minDegree: 118, maxDegree: 135, value: "क्रुध्" },
+  { minDegree: 136, maxDegree: 153, value: "श्रु" },
+  { minDegree: 154, maxDegree: 171, value: "गर्ज्" },
+  { minDegree: 172, maxDegree: 189, value: "खाद्" },
+  { minDegree: 190, maxDegree: 207, value: "मिल् " },
+  { minDegree: 208, maxDegree: 225, value: "स्पृश्" },
+  { minDegree: 226, maxDegree: 243, value: "प्रच्छ्" },
+  { minDegree: 244, maxDegree: 261, value: "मृ" },
+  { minDegree: 262, maxDegree: 279, value: "इष"},
+  { minDegree: 280, maxDegree: 297, value: "क्षिप्"},
+  { minDegree: 298, maxDegree: 315, value: "चि" },
+  { minDegree: 316, maxDegree: 333, value: "नश्"},
+  { minDegree: 334, maxDegree: 351, value: "नृत्"},
+  { minDegree: 352, maxDegree: 360, value: "दा" },
+
+
+
 
 
 ];
 //Size of each piece
-const data = [16, 16, 16, 16];
+const data = [16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16,16,16];
 //background color for each piece
 var pieColors = [
+  "#8b35bc",
+  "#b163da",
+  "#8b35bc",
+  "#b163da",
+  "#8b35bc",
+  "#b163da",
+  "#8b35bc",
+  "#b163da",
+  "#8b35bc",
+  "#b163da",
+  "#8b35bc",
+  "#b163da",
+  "#8b35bc",
+  "#b163da",
+  "#8b35bc",
+  "#b163da",
   "#8b35bc",
   "#b163da",
   "#8b35bc",
@@ -28,7 +63,7 @@ let myChart = new Chart(wheel, {
   type: "pie",
   data: {
     //Labels(values which are to be displayed on chart)
-    labels: [1, 2, 3, 4],
+    labels: ["भू", "हन्", "स्मृ","भी","ह्री", "दा","नृत्","नश्","चि","क्षिप्","इष","मृ","प्रच्छ्","स्पृश्","मिल् ","खाद्","गर्ज्","श्रु","क्रुध्","कृ"],
     //Settings for dataset/pie
     datasets: [
       {
@@ -51,7 +86,7 @@ let myChart = new Chart(wheel, {
       datalabels: {
         color: "#ffffff",
         formatter: (_, context) => context.chart.data.labels[context.dataIndex],
-        font: { size: 24 },
+        font: { size: 14 },
       },
     },
   },
@@ -62,7 +97,7 @@ const valueGenerator = (angleValue) => {
     //if the angleValue is between min and max then display it
     if (angleValue >= i.minDegree && angleValue <= i.maxDegree) {
       finalValue.innerHTML = `<p>Value: ${i.value}</p>`;
-      localStorage.setItem("Pratyay", i.value)
+      localStorage.setItem("Dhatu", i.value)
       spinBtn.disabled = false;
       console.log(angleValue)
       myChart.options.rotation = 0;
