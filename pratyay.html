@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin Wheel App</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="pratyay.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center; font-size: larger;">Select Pratyay</h1>
+    <br>
+    <div class="wrapper">
+      <div class="container">
+        <canvas id="wheel"></canvas>
+        <button id="spin-btn">Spin</button>
+        <img src="spinner-arrow-.svg" alt="spinner-arrow" />
+      </div>
+      <div style="text-align: center;">
+        <p id="final-value">Click On The Spin Button To Start</p>
+        <br>
+        <a style="background-color: darkorange; padding: 5px; border-radius: 10px; cursor: pointer;">Select Pratyay</a>
+      </div>
+    </div>
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- Chart JS Plugin for displaying text over chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+    <!-- Script -->
+    <script src="pratyay.js"></script>
+  </body>
+</html>
