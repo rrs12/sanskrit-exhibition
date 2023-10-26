@@ -3,11 +3,11 @@ const spinBtn = document.getElementById("spin-btn");
 const finalValue = document.getElementById("final-value");
 //Object that stores values of minimum and maximum angle for a value
 const rotationValues = [
-  { minDegree: 0, maxDegree: 10, value: 2 },
-  { minDegree: 11, maxDegree: 100, value: 1 },
-  { minDegree: 101, maxDegree: 190, value: 4 },
-  { minDegree: 191, maxDegree: 280, value: 3 },
-  { minDegree: 281, maxDegree: 360, value: 2 },
+  { minDegree: 0, maxDegree: 10, value: "क्त्वा" },
+  { minDegree: 11, maxDegree: 100, value: "तुमुन्" },
+  { minDegree: 101, maxDegree: 190, value: "क्त"},
+  { minDegree: 191, maxDegree: 280, value: "क्तवतु" },
+  { minDegree: 281, maxDegree: 360, value: "क्त्वा"},
 
 
 ];
@@ -28,7 +28,7 @@ let myChart = new Chart(wheel, {
   type: "pie",
   data: {
     //Labels(values which are to be displayed on chart)
-    labels: [1, 2, 3, 4],
+    labels: ["तुमुन्", "क्त्वा", "क्तवतु", "क्त"],
     //Settings for dataset/pie
     datasets: [
       {
