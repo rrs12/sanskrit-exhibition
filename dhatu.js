@@ -14,7 +14,7 @@ const rotationValues = [
   { minDegree: 130, maxDegree: 147, value: "श्रु" },
   { minDegree: 148, maxDegree: 165, value: "गर्ज्" },
   { minDegree: 166, maxDegree: 183, value: "खाद्" },
-  { minDegree: 184, maxDegree: 201, value: "मिल् " },
+  { minDegree: 184, maxDegree: 201, value: "मिल्" },
   { minDegree: 202, maxDegree: 219, value: "स्पृश्" },
   { minDegree: 220, maxDegree: 237, value: "प्रच्छ्" },
   { minDegree: 238, maxDegree: 255, value: "मृ" },
