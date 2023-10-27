@@ -96,7 +96,7 @@ const valueGenerator = (angleValue) => {
   for (let i of rotationValues) {
     //if the angleValue is between min and max then display it
     if (angleValue >= i.minDegree && angleValue <= i.maxDegree) {
-      finalValue.innerHTML = `<p>Value: ${i.value}</p>`;
+      finalValue.innerHTML = `<p>धातु: ${i.value}</p>`;
       localStorage.setItem("Dhatu", i.value)
       spinBtn.disabled = false;
       console.log(angleValue)
@@ -115,7 +115,7 @@ spinBtn.addEventListener("click", () => {
   spinBtn.disabled = true;
   myChart.options.rotation = 0;
   //Empty final value
-  finalValue.innerHTML = `<p>Good Luck!</p>`;
+  finalValue.innerHTML = `<p></p>`;
   //Generate random degrees to stop at
   let randomDegree = Math.floor(Math.random() * (355 - 0 + 1) + 0);
   //Interval for rotation animation

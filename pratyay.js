@@ -80,7 +80,7 @@ spinBtn.addEventListener("click", () => {
   spinBtn.disabled = true;
   myChart.options.rotation = 0;
   //Empty final value
-  finalValue.innerHTML = `<p>Good Luck!</p>`;
+  finalValue.innerHTML = `<p></p>`;
   //Generate random degrees to stop at
   let randomDegree = Math.floor(Math.random() * (355 - 0 + 1) + 0);
   //Interval for rotation animation
