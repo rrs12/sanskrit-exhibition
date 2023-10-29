@@ -1,6 +1,7 @@
 const wheel = document.getElementById("wheel");
 const spinBtn = document.getElementById("spin-btn");
 const finalValue = document.getElementById("final-value");
+const select_btn= document.getElementById("select")
 //Object that stores values of minimum and maximum angle for a value
 const rotationValues = [
   { minDegree: 0, maxDegree: 3, value: "दा" },
@@ -99,6 +100,7 @@ const valueGenerator = (angleValue) => {
       finalValue.innerHTML = `<p>धातु: ${i.value}</p>`;
       localStorage.setItem("Dhatu", i.value)
       spinBtn.disabled = false;
+      select_btn.disabled=false
       console.log(angleValue)
       myChart.options.rotation = 0;
       break;
@@ -140,3 +142,7 @@ spinBtn.addEventListener("click", () => {
     }
   }, 10);
 });
+
+function open_pratyay(){
+  window.open("/pratyay.html","_self");
+}
