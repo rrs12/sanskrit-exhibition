@@ -144,5 +144,5 @@ spinBtn.addEventListener("click", () => {
 });
 
 function open_pratyay(){
-  window.open("/pratyay.html","_self");
+  window.open("https://rrs12.github.io/sanskrit-exhibition/pratyay.html","_self");
 }

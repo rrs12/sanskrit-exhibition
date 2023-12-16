@@ -110,5 +110,5 @@ spinBtn.addEventListener("click", () => {
 });
 
 function open_result(){
-  window.open("/result.html","_self");
+  window.open("https://rrs12.github.io/sanskrit-exhibition/result.html","_self");
 }

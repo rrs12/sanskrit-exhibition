@@ -15,7 +15,7 @@ function sendMail(){
            console.log(res)
    
            alert("Message sent successfully")
-           window.open("/index.html","_self");
+           window.open("https://rrs12.github.io/sanskrit-exhibition/index.html","_self");
 
        }
     )
